@@ -17,6 +17,7 @@ h5,
 h6 {
   margin: 0;
 }
+
 ul {
   list-style: none;
   margin: 0;
@@ -144,6 +145,17 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+.hero-background {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/background/img-hero.png');
+  width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -266,6 +278,34 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--brand-grey);
+  margin-bottom: 16px;
+}
+.team-socials-item + .team-socials-item {
+  margin-left: 10px;
+}
+.team-socials-list {
+  display: flex;
+  justify-content: center;
+}
+.team-socials-link {
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  cursor: pointer;
+  display: flex;
+}
+.team-socials-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.team-socials-link:hover,
+.team-socials-link:focus {
+  background-color: var(--brand-blue);
+  border-radius: 50%;
+  fill: var(--brand-white);
 }
 
 /*-------footer--------*/
@@ -290,6 +330,7 @@ body {
 }
 .footer-adress {
   color: var(--brand-white);
+  cursor: pointer;
 }
 .footer-item-adress {
   font-size: 14px;
@@ -311,6 +352,52 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social {
+  margin-left: 70px;
+}
+.footer-social-list {
+  display: flex;
+}
+.footer-social-item {
+  cursor: pointer;
+}
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+
+.footer-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand-white);
+  margin-bottom: 20px;
+}
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  fill: currentColor;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  align-items: center;
+  color: var(--brand-white);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--brand-blue);
+}
+.footer-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* Portfolio */

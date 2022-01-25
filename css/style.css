@@ -136,6 +136,22 @@ body {
   padding-bottom: 32px;
   color: var(--brand-grey);
 }
+.header-link-icon-mail,
+.header-link-icon-tel {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.header-link-mail:hover {
+  fill: var(--brand-blue);
+}
+.header-link-icon-tel:hover {
+  fill: var(--brand-blue);
+}
+
+.connection:hover,
+.connection:focus {
+  color: var(--brand-blue);
+}
 
 /*-------Шапка--------*/
 .hero {

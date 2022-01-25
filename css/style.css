@@ -123,7 +123,11 @@ body {
 .header-link:focus,
 .connection:hover,
 .connection:focus,
-.aclive-page {
+.aclive-page,
+.header-link-mail:hover,
+.header-link-icon-tel:hover,
+.connection:hover,
+.connection:focus {
   color: var(--brand-blue);
 }
 .header-item-adress + .header-item-adress {
@@ -140,17 +144,6 @@ body {
 .header-link-icon-tel {
   margin-right: 10px;
   fill: currentColor;
-}
-.header-link-mail:hover {
-  fill: var(--brand-blue);
-}
-.header-link-icon-tel:hover {
-  fill: var(--brand-blue);
-}
-
-.connection:hover,
-.connection:focus {
-  color: var(--brand-blue);
 }
 
 /*-------Шапка--------*/

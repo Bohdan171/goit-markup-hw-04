@@ -7,6 +7,7 @@
   --brand-black-studio: #000000;
   --brand-background: #e5e5e5;
   --brand-background-team: #f5f4fa;
+  --brand-link-icon: #afb1b8;
 }
 p,
 h1,
@@ -17,7 +18,6 @@ h5,
 h6 {
   margin: 0;
 }
-
 ul {
   list-style: none;
   margin: 0;
@@ -34,7 +34,6 @@ img {
 a {
   text-decoration: none;
 }
-
 body {
   color: var(--brand-black);
   font-family: 'Roboto', sans-serif;
@@ -63,7 +62,6 @@ body {
 }
 
 /*-------header--------*/
-
 .header {
   background-color: var(--brand-white);
   border-bottom: 1px solid #ececec;
@@ -86,7 +84,6 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-
 .header-list-nav,
 .header-list-adress {
   font-weight: 500;
@@ -101,7 +98,6 @@ body {
 .header-list-nav {
   display: flex;
 }
-
 .header-list-adress {
   display: flex;
   margin-left: auto;
@@ -145,7 +141,6 @@ body {
   margin-right: 10px;
   fill: currentColor;
 }
-
 /*-------Шапка--------*/
 .hero {
   background-color: var(--brand-fon);
@@ -234,6 +229,20 @@ body {
   letter-spacing: 0.03em;
   color: var(--brand-grey);
 }
+.special-container-icon {
+  width: 270px;
+  height: 120px;
+  background-color: var(--brand-background-team);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.special-icon {
+  width: 70px;
+  height: 70px;
+}
 /*-------Чем мы занимаемся--------*/
 .about-section {
   display: flex;
@@ -309,14 +318,50 @@ body {
   width: 20px;
   height: 20px;
 }
-
 .team-socials-link:hover,
 .team-socials-link:focus {
   background-color: var(--brand-blue);
   border-radius: 50%;
   fill: var(--brand-white);
 }
-
+/*-------Постоянные клиенты--------*/
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-title {
+  margin-bottom: 50px;
+}
+.client-list {
+  display: flex;
+  margin-left: -30px;
+}
+.client-item {
+  margin-left: 30px;
+  width: 170px;
+  height: 92px;
+  cursor: pointer;
+}
+.client-link {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--brand-link-icon);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--brand-link-icon);
+}
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--brand-blue);
+  fill: var(--brand-blue);
+}
+.client-item-icon {
+  width: 106px;
+  height: 60px;
+}
 /*-------footer--------*/
 .footer {
   background-color: var(--brand-fon);
@@ -366,7 +411,6 @@ body {
   display: flex;
   align-items: baseline;
 }
-
 .footer-social {
   margin-left: 70px;
 }
@@ -379,7 +423,6 @@ body {
 .footer-social-item + .footer-social-item {
   margin-left: 10px;
 }
-
 .footer-text {
   font-weight: 700;
   font-size: 14px;
@@ -408,11 +451,7 @@ body {
   width: 20px;
   height: 20px;
 }
-
-/* Portfolio */
-
 /* Портфолио */
-
 .services {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -469,7 +508,6 @@ body {
   color: var(--brand-black);
   margin-bottom: 4px;
 }
-
 .services-text {
   font-size: 16px;
   line-height: 1.8;

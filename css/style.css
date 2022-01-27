@@ -8,6 +8,7 @@
   --brand-background: #e5e5e5;
   --brand-background-team: #f5f4fa;
   --brand-link-icon: #afb1b8;
+  --brand-blue-btn: #188ce8;
 }
 p,
 h1,
@@ -187,10 +188,10 @@ body {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--brand-blue-btn);
 }
 .hero-btn:active {
-  color: #188ce8;
+  color: var(--brand-blue-btn);
 }
 /*-------Особенности--------*/
 .special {
@@ -281,15 +282,14 @@ body {
 }
 .team-text {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px 30px 32px;
 }
 .team-title-people {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--brand-black);
   margin-bottom: 10px;
 }
 .team-class {
@@ -311,7 +311,7 @@ body {
   height: 44px;
   justify-content: center;
   align-items: center;
-  fill: #afb1b8;
+  fill: var(--brand-link-icon);
   cursor: pointer;
   display: flex;
 }
@@ -484,6 +484,8 @@ body {
 .services-btn:focus {
   color: var(--brand-white);
   background-color: var(--brand-blue);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .services-btn:active {
   color: var(--brand-white);
@@ -523,5 +525,17 @@ body {
 .second-btn {
   background-color: var(--brand-blue);
   color: var(--brand-white);
+}
+.services-cards-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.services-link {
+  display: block;
+}
+.services-link:hover,
+.services-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* Style */

@@ -135,6 +135,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--brand-grey);
+  align-items: center;
 }
 .header-link-icon-mail,
 .header-link-icon-tel {
